@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <script src=https://kit.fontawesome.com/908b05fde3.js crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>To Do List</title>
+</head>
+<body>
+  <header>
+    <img src="assets/icon.png">
+    <h1>TO DO LIST</h1>
+  </header>
+  <main>
+    <section class="add">
+      <form class="add-form">
+        <input type="text" class="add-text" name="todo" placeholder="Write new item...">
+        <input type="submit" value="ADD NEW ITEM">
+      </form>
+    </section>
+    <section class="list">
+      <form class="search">
+        <input type="text" name="search" placeholder="Search...">
+      </form>
+      <ul class="todos">
+        <li class="todo">
+          <span>clean the kitchen</span>
+          <i class="fas fa-trash-alt"></i>
+        </li>
+        <li class="todo">
+          <span>buy bananas</span>
+          <i class="fas fa-trash-alt"></i>
+        </li>
+        <li class="todo">
+          <span>read a book</span>
+          <i class="fas fa-trash-alt"></i>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

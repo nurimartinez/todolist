@@ -1,0 +1,129 @@
+/* Color Variables */
+/* Font Variables */
+/* Basic Format */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #6F69AC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  width: 75%;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+header img {
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+/* Main Styles */
+main {
+  width: 100%;
+}
+
+main input {
+  width: 100%;
+  display: block;
+  padding: 0.6em 1em;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main .add {
+  width: 75%;
+  max-width: 300px;
+  margin: 30px auto;
+}
+
+main .add input {
+  background-color: #95DAC1;
+}
+
+main .add input:first-child {
+  margin-bottom: 7px;
+  background-color: #FFF;
+}
+
+main .list {
+  width: 85%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em 1.3em;
+  background-color: #9f9ad4;
+  border-radius: 7px;
+  -webkit-box-shadow: 3px 3px 10px #000;
+          box-shadow: 3px 3px 10px #000;
+}
+
+main .list .search, main .list .todos {
+  width: 100%;
+}
+
+main .list .todos {
+  margin-top: 15px;
+  list-style-type: none;
+}
+
+main .list .todos .todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.7em;
+  padding: 0.6em 1em;
+  color: #000;
+  background-color: #FD6F96;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main .list .todos .todo i {
+  color: #FFF;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.hide {
+  display: none !important;
+}
+/*# sourceMappingURL=styles.css.map */

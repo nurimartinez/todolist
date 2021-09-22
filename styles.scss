@@ -1,0 +1,126 @@
+/* Color Variables */
+$primary-color: #FFF;
+$secondary-color: #6F69AC;
+$light-green: #95DAC1;
+$light-pink: #FD6F96;
+$light-yellow: #ffe791;
+$strong-color: #000;
+
+/* Font Variables */
+$title-font: 'Montserrat', sans-serif;
+$text-font: 'Roboto', sans-serif;
+
+/* Basic Format */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $text-font;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  width: 75%;
+  text-align: center;
+
+  h1 {
+    font-size: 1.7rem;
+    font-family: $title-font;
+    color: $primary-color;
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  }
+
+  img {
+    width: 40px;
+    margin-bottom: 5px;
+  }
+  
+}
+
+/* Main Styles */
+main {
+  width: 100%;
+
+  input {
+    width: 100%;
+    display: block;
+    padding: 0.6em 1em;
+    border: 1px solid $strong-color;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .add {
+    width: 75%;
+    max-width: 300px;
+    margin: 30px auto;
+
+    input {
+      background-color: $light-green;
+    }
+
+    input:first-child {
+      margin-bottom: 7px;
+      background-color: $primary-color;
+    }
+  }
+
+  .list {
+    width: 85%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 1.3em;
+    background-color: #9f9ad4;
+    border-radius: 7px;
+    box-shadow: 3px 3px 10px $strong-color;
+
+    .search, .todos {
+      width: 100%;
+    }
+
+    .todos {
+      margin-top: 15px;
+      list-style-type: none;
+  
+      .todo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.7em;
+        padding: 0.6em 1em;
+        color: $strong-color;
+        background-color: $light-pink;
+        border: 1px solid $strong-color;
+        border-radius: 5px;
+        cursor: pointer;
+
+        i {
+          color: $primary-color;
+          text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        }
+
+      }
+    }
+
+
+  }
+
+}
+
+.hide {
+  display: none !important;
+}
